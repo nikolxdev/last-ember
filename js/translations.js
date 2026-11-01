@@ -1,3 +1,4 @@
+/* © 2026 Nikola Vojvodić · https://nikolxdev.github.io/ · All rights reserved, see LICENSE. [nv:69e82a9324] */
 window.LASTEMBER_TEXT = (function(){
   var D = {
     skip:["Skip to the menu","Preskoči na meni"],
@@ -70,7 +71,7 @@ window.LASTEMBER_TEXT = (function(){
     ct_maps:["Open in Maps","Otvori u mapama"], closed:["Closed","Zatvoreno"], hrs:["20:00 to 03:00","20:00 do 03:00"],
     z_empty:["Enter a neighbourhood first.","Prvo upiši naselje."],
     z_yes:["We deliver there. Delivery is 190 RSD, free over 2,000 RSD.","Dostavljamo tu. Dostava je 190 RSD, besplatna preko 2.000 RSD."],
-    z_near:["That's on the edge of our area. Call 011 555 0312 before ordering and we'll confirm your address.","Tu smo na ivici zone. Pozovi 011 555 0312 pre porudžbine da potvrdimo adresu."],
+    z_near:["That's on the edge of our area. Call 011 000 0312 before ordering and we'll confirm your address.","Tu smo na ivici zone. Pozovi 011 000 0312 pre porudžbine da potvrdimo adresu."],
     z_no:["That's outside our 4 km area. Pickup at the restaurant still works until 02:45.","To je van naše zone od 4 km. Preuzimanje u lokalu radi do 02:45."],
     cf_head:["Send us a message","Pošalji nam poruku"],
     cf_sub:["Questions, feedback or a party for your group. We answer within one working day.","Pitanja, utisci ili proslava za tvoje društvo. Odgovaramo u roku od jednog radnog dana."],
@@ -84,9 +85,9 @@ window.LASTEMBER_TEXT = (function(){
     ft_tag:["When the lights go out, the last ember stays. Live fire, fresh beef, house sauces.","Kad se svetla pogase, poslednja žeravica ostaje. Živa vatra, sveže meso, kućni sosovi."],
     ft_nav:["Explore","Navigacija"], ft_legal:["Legal","Pravno"],
     lg_privacy:["Privacy policy","Politika privatnosti"], lg_terms:["Terms of use","Uslovi korišćenja"], lg_cookies:["Cookies","Kolačići"],
-    ft_copy:["© 2026 Last Ember d.o.o., Belgrade. Tax ID 113456789.","© 2026 Last Ember doo, Beograd. PIB 113456789."],
+    ft_copy:["Last Ember is a fictional restaurant.","Last Ember je izmišljen restoran."],
     ft_demo:["Demo site: orders, bookings and messages are simulated.","Demo sajt: porudžbine, rezervacije i poruke su simulirane."],
-    ft_made:["Made by Nikola Vojvodić","Napravio Nikola Vojvodić"],
+    ft_made:["Made by Nikola Vojvodić · © 2026","Napravio Nikola Vojvodić · © 2026"],
     social_toast:["Social profiles go live with the real opening. This site is a demo.","Profili na mrežama kreću sa pravim otvaranjem. Ovaj sajt je demo."],
 
     cart_title:["Your order","Tvoja porudžbina"], cart_empty:["Your order is empty.<br>The grill is waiting.","Korpa je prazna.<br>Roštilj čeka tvoj izbor."],

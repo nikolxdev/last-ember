@@ -1,3 +1,4 @@
+/* © 2026 Nikola Vojvodić · https://nikolxdev.github.io/ · All rights reserved, see LICENSE. [nv:69e82a9324] */
 (function(){
   "use strict";
 
@@ -265,21 +266,21 @@
       '<h4>What we collect</h4><p>When you order or book a table we ask for your name, phone number and, for delivery, your address. We use them only to deliver the order or hold the table.</p>' +
       '<h4>How long we keep it</h4><p>Order details are kept for twelve months for bookkeeping and then deleted.</p>' +
       '<h4>Who sees it</h4><p>Only the courier carrying your order sees your name and address. We never sell data and never use it for third-party advertising.</p>' +
-      '<h4>Your rights</h4><p>You can ask to see, correct or delete your data at hello@lastember.rs. We reply within 30 days.</p>' +
+      '<h4>Your rights</h4><p>You can ask to see, correct or delete your data at hello@lastember.example. We reply within 30 days.</p>' +
       '<p style="margin-top:18px;">This site is a demo, so no real data is collected here.</p>',
       '<h4>Šta prikupljamo</h4><p>Kada poručuješ ili rezervišeš sto, tražimo ime, telefon i, za dostavu, adresu. To koristimo samo da bismo isporučili porudžbinu ili sačuvali sto.</p>' +
       '<h4>Koliko dugo čuvamo</h4><p>Podatke o porudžbini čuvamo dvanaest meseci zbog knjigovodstva, a zatim ih brišemo.</p>' +
       '<h4>Ko ih vidi</h4><p>Ime i adresu vidi samo kurir koji nosi tvoju porudžbinu. Ne prodajemo podatke nikome i ne koristimo ih za reklame trećih strana.</p>' +
-      '<h4>Tvoja prava</h4><p>Možeš tražiti uvid, ispravku ili brisanje svojih podataka na hello@lastember.rs. Odgovaramo u roku od 30 dana.</p>' +
+      '<h4>Tvoja prava</h4><p>Možeš tražiti uvid, ispravku ili brisanje svojih podataka na hello@lastember.example. Odgovaramo u roku od 30 dana.</p>' +
       '<p style="margin-top:18px;">Ovaj sajt je demo, pa se ovde ne prikupljaju pravi podaci.</p>' ] },
     terms:{ t:['Terms of use','Uslovi korišćenja'], b:[
       '<h4>Orders</h4><p>An order is accepted once you receive an order number. If a dish sells out we may cancel the order, and we let you know by phone.</p>' +
       '<h4>Prices and payment</h4><p>All prices are in Serbian dinars and include VAT. You pay by cash or card on pickup or to the courier.</p>' +
-      '<h4>Cancelling</h4><p>You can cancel an order before the kitchen starts on it by calling 011 555 0312. Please cancel a table booking at least one hour ahead so we can give the seat to someone else.</p>' +
+      '<h4>Cancelling</h4><p>You can cancel an order before the kitchen starts on it by calling 011 000 0312. Please cancel a table booking at least one hour ahead so we can give the seat to someone else.</p>' +
       '<p style="margin-top:18px;">This site is a demo, so no order placed here is real.</p>',
       '<h4>Porudžbine</h4><p>Porudžbina je primljena kada dobiješ broj porudžbine. Ako se jelo rasproda, možemo da otkažemo porudžbinu, uz obaveštenje telefonom.</p>' +
       '<h4>Cene i plaćanje</h4><p>Sve cene su u dinarima i uključuju PDV. Plaćanje je gotovinom ili karticom pri preuzimanju ili kuriru.</p>' +
-      '<h4>Otkazivanje</h4><p>Porudžbinu možeš otkazati dok ne krene priprema, pozivom na 011 555 0312. Rezervaciju stola otkaži bar sat vremena ranije da bismo mesto dali nekom drugom.</p>' +
+      '<h4>Otkazivanje</h4><p>Porudžbinu možeš otkazati dok ne krene priprema, pozivom na 011 000 0312. Rezervaciju stola otkaži bar sat vremena ranije da bismo mesto dali nekom drugom.</p>' +
       '<p style="margin-top:18px;">Ovaj sajt je demo, pa nijedna porudžbina nije stvarna.</p>' ] },
     cookies:{ t:['Cookies','Kolačići'], b:[
       '<h4>Only what ordering needs</h4><p>The site keeps your order basket, language and delivery choice in your browser while you browse. Ordering does not work without them, so they cannot be switched off.</p>' +
@@ -925,4 +926,17 @@
   renderAll();
   onScrollUi();
   statusTimer = setInterval(function(){ renderStatus(); }, 30000);
+})();
+
+(function () {
+  var HOMES = ["nikolxdev.github.io", "localhost", "127.0.0.1", "[::1]", ""];
+  var host = location.hostname;
+  if (HOMES.indexOf(host) > -1 || /\.localhost$/.test(host)) return;
+  var link = document.createElement("a");
+  link.className = "nv-original";
+  link.href = "https://nikolxdev.github.io/";
+  link.textContent = "Original work by Nikola Vojvodić";
+  link.setAttribute("data-nv", "nv:69e82a9324");
+  document.body.appendChild(link);
+  console.warn("This page is a copy of work by Nikola Vojvodić (© 2026, all rights reserved): https://nikolxdev.github.io/ [nv:69e82a9324]");
 })();

@@ -15,11 +15,11 @@ window.LASTEMBER_TEXT = (function(){
     h4:["Yours, tonight.","Tvoje, večeras."], h4s:["Fresh. Hot. No waiting till morning.","Sveže. Toplo. Bez čekanja do jutra."],
     h_order:["Order tonight","Poruči večeras"], h_book:["Book a table","Rezerviši sto"],
 
-    sp_eyebrow:["This week","Ove nedelje"], sp_head:["A different deal every night","Svako veče druga ponuda"],
+    sp_head:["A different deal every night","Svako veče druga ponuda"],
     sp_sub:["Specials apply in the restaurant and on pickup orders. Just mention it at the counter.","Ponude važe u lokalu i za preuzimanje. Samo reci na pultu."],
     sp_today:["Tonight","Večeras"],
 
-    m_eyebrow:["Who works at night","Ko sve radi noću"], m_head:["The night shift menu","Meni noćne smene"],
+    m_head:["The night shift menu","Meni noćne smene"],
     m_sub:["Every burger is named after someone who works while the city sleeps. Everything is cooked to order, over live fire.","Svaki burger nosi ime nekoga ko radi dok grad spava. Sve se pravi po porudžbini, na živoj vatri."],
     m_search_ph:["Search by name or ingredient","Traži po imenu ili sastojku"],
     f_all:["All","Sve"], f_hot:["Spicy","Ljuto"], f_veg:["Meat-free","Bez mesa"], f_gf:["Gluten-free","Bez glutena"],
@@ -37,21 +37,18 @@ window.LASTEMBER_TEXT = (function(){
     qty_minus:["Fewer","Manje"], qty_plus:["More","Više"],
     al_gluten:["gluten","gluten"], al_milk:["milk","mleko"], al_eggs:["eggs","jaja"], al_mustard:["mustard","senf"], al_sesame:["sesame","susam"],
 
-    cb_eyebrow:["Save on your order","Uštedi na porudžbini"], cb_head:["Shift sets","Setovi za smenu"],
+    cb_head:["Shift sets","Setovi za smenu"],
     cb_sub:["Burger, side and drink at a price that makes sense at 2 a.m.","Burger, prilog i piće po ceni koja ima smisla u dva ujutru."],
     cb_best:["BEST VALUE","NAJISPLATIVIJE"], cb_save:["you save {p}","ušteda {p}"], cb_add:["Add set","Dodaj set"],
 
-    st_eyebrow:["Since 2021","Od 2021."], st_head:["Why we open after midnight","Zašto radimo posle ponoći"],
+    st_head:["Why we open after midnight","Zašto radimo posle ponoći"],
     st_p1:["We think the best flavours come out once the rush is over. The meat rests, the fire breathes, and every burger is made for you, not for a queue.",
            "Verujemo da najbolji ukusi izlaze kad se žurba stiša. Meso odmara, vatra diše, a svaki burger se pravi za tebe, ne za red čekanja."],
     st_p2:["We started in 2021 with one grill and the idea that the city deserves a real meal at two in the morning. Today the beef arrives fresh every morning, the buns are baked in our own bakery, and the sauces are still mixed by hand every evening before we open.",
            "Počeli smo 2021. sa jednim roštiljem i idejom da grad zaslužuje pravo jelo i u dva ujutru. Danas meso stiže sveže svako jutro, lepinje se peku u našoj pekari, a sosovi se i dalje mešaju ručno, svake večeri pre otvaranja."],
     st_p3:["We named the place after the last ember: what is left when the flames settle. It makes no noise, but it stays warm the longest.",
            "Ime smo dali po poslednjoj žeravici, onome što ostane kad se plamen smiri. Ne pravi buku, ali greje najduže."],
-    st1:["the year of our first grill","godina prvog roštilja"], st2:["of beef in every large burger","junetine u svakom velikom burgeru"],
-    st3:["last order, every night except Monday","poslednja porudžbina, svake noći osim ponedeljka"],
-
-    rs_eyebrow:["Save a seat","Sačuvaj mesto"], rs_head:["Book a table","Rezerviši sto"],
+    rs_head:["Book a table","Rezerviši sto"],
     rs_sub:["We take bookings from 20:00 to 02:00. For groups over 8, give us a call.","Primamo rezervacije od 20:00 do 02:00. Za grupe veće od 8 osoba pozovi nas telefonom."],
     l_name:["Full name","Ime i prezime"], l_phone:["Phone","Telefon"], l_date:["Date","Datum"], l_time:["Time","Vreme"], l_guests:["Guests","Broj osoba"],
     l_area:["Where would you like to sit","Gde želiš da sediš"], a_any:["Anywhere","Svejedno"], a_hall:["Dining room","Sala"], a_garden:["Garden","Bašta"], a_bar:["At the bar","Za šankom"],

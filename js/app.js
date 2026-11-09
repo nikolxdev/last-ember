@@ -451,6 +451,7 @@
     if(!isOpen(el)) lastFocus.push(document.activeElement);
     el.classList.add('open');
     el.setAttribute('aria-hidden', 'false');
+    el.inert = false;
     sync();
     if(focusEl) setTimeout(function(){ try{ focusEl.focus(); }catch(e){} }, 30);
   }
@@ -458,6 +459,7 @@
     if(!isOpen(el)) return;
     el.classList.remove('open');
     el.setAttribute('aria-hidden', 'true');
+    el.inert = true;
     sync();
     var f = lastFocus.pop();
     if(f && f.focus){ try{ f.focus(); }catch(e){} }
@@ -473,6 +475,15 @@
       else if(isOpen(legalModal)) closeLayer(legalModal);
       else if(isOpen(drawer)) closeLayer(drawer);
       else if(isOpen(mobileMenu)) closeLayer(mobileMenu);
+    }
+    if(e.key === 'Tab'){
+      var layer = isOpen(itemModal) ? itemModal : isOpen(legalModal) ? legalModal : isOpen(drawer) ? drawer : isOpen(mobileMenu) ? mobileMenu : null;
+      if(!layer) return;
+      var stops = Array.prototype.filter.call(layer.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled])'), function(n){ return n.offsetParent !== null; });
+      if(!stops.length) return;
+      var first = stops[0], last = stops[stops.length - 1], inside = layer.contains(document.activeElement);
+      if(e.shiftKey && (!inside || document.activeElement === first)){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && (!inside || document.activeElement === last)){ e.preventDefault(); first.focus(); }
     }
   });
 
@@ -902,7 +913,7 @@
       c.style.opacity = o;
       c.style.transform = 'translateY(' + ((1 - o) * 14).toFixed(1) + 'px)';
       c.style.pointerEvents = o > 0.5 ? 'auto' : 'none';
-      c.setAttribute('aria-hidden', o < 0.05 ? 'true' : 'false');
+      Array.prototype.forEach.call(c.querySelectorAll('a, button'), function(n){ n.tabIndex = o < 0.05 ? -1 : 0; });
     });
     cue.style.opacity = (1 - smooth(0, 0.06, p)).toFixed(2);
   }
@@ -914,7 +925,7 @@
   if(reduced){
     journey.classList.add('reduced');
     renderHero(1);
-    chapters.forEach(function(c){ c.setAttribute('aria-hidden', 'false'); });
+    chapters.forEach(function(c){ Array.prototype.forEach.call(c.querySelectorAll('a, button'), function(n){ n.tabIndex = 0; }); });
   } else {
     var ticking = false;
     var onHero = function(){ if(!ticking){ ticking = true; requestAnimationFrame(function(){ renderHero(progress()); ticking = false; }); } };

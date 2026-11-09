@@ -76,7 +76,7 @@
   </div>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" inert>
   <button class="mobile-close" id="mobileClose" type="button" data-ia="aria_close" aria-label="Close">&times;</button>
   <a href="#menu" data-i="nav_menu">Menu</a>
   <a href="#specials" data-i="nav_deals">Deals</a>
@@ -89,6 +89,7 @@
   </div>
 </div>
 
+<main>
 <section class="journey" id="top">
   <div class="journey-stage">
     <div class="rig-wrap">
@@ -331,11 +332,11 @@
     <div class="visit-grid">
       <div class="panel">
         <div class="v-block">
-          <h4 data-i="ct_hours">Opening hours</h4>
+          <h3 data-i="ct_hours">Opening hours</h3>
           <ul class="hours" id="hoursList"></ul>
         </div>
         <div class="v-block">
-          <h4 data-i="ct_contact">Contact</h4>
+          <h3 data-i="ct_contact">Contact</h3>
           <p class="v-row">
             <svg class="icon-s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
             <span class="val">Ulica Plamena 12, Beograd</span>
@@ -353,7 +354,7 @@
           </p>
         </div>
         <div class="v-block">
-          <h4 data-i="ct_zone">Check the delivery area</h4>
+          <h3 data-i="ct_zone">Check the delivery area</h3>
           <div class="zone-row">
             <input class="inp" type="text" id="zoneInput" data-ip="zone_ph" data-ia="zone_ph" placeholder="Neighbourhood, e.g. Vračar" aria-label="Neighbourhood, e.g. Vračar">
             <button class="btn-ghost" id="zoneBtn" type="button" data-i="zone_btn">Check</button>
@@ -432,6 +433,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
@@ -458,7 +460,7 @@
         </div>
       </div>
       <div class="f-col">
-        <h4 data-i="ft_nav">Explore</h4>
+        <h3 data-i="ft_nav">Explore</h3>
         <ul>
           <li><a href="#menu" data-i="nav_menu">Menu</a></li>
           <li><a href="#specials" data-i="nav_deals">Deals</a></li>
@@ -467,13 +469,13 @@
         </ul>
       </div>
       <div class="f-col">
-        <h4 data-i="ct_contact">Contact</h4>
+        <h3 data-i="ct_contact">Contact</h3>
         <ul>
           <li><span class="txt">Ulica Plamena 12, Beograd</span></li>
           <li><span class="txt">011 000 0312</span></li>
           <li><span class="txt">hello@lastember.example</span></li>
         </ul>
-        <h4 style="margin-top:22px;" data-i="ft_legal">Legal</h4>
+        <h3 style="margin-top:22px;" data-i="ft_legal">Legal</h3>
         <ul>
           <li><button type="button" class="lnk" data-legal="privacy" data-i="lg_privacy">Privacy policy</button></li>
           <li><button type="button" class="lnk" data-legal="terms" data-i="lg_terms">Terms of use</button></li>
@@ -490,7 +492,7 @@
 </footer>
 
 <div class="overlay" id="overlay"></div>
-<aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawerTitle">
+<aside class="drawer" id="drawer" aria-hidden="true" aria-labelledby="drawerTitle" inert>
   <div class="drawer-head">
     <h3 id="drawerTitle" data-i="cart_title">Your order</h3>
     <button class="x-btn" id="drawerClose" type="button" data-ia="aria_close" aria-label="Close">&times;</button>
@@ -570,7 +572,7 @@
   </div>
 </aside>
 
-<div class="modal" id="itemModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="imName">
+<div class="modal" id="itemModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="imName" inert>
   <div class="modal-card">
     <button class="x-btn" id="imClose" type="button" data-ia="aria_close" aria-label="Close">&times;</button>
     <div class="modal-art" id="imArt"></div>
@@ -596,7 +598,7 @@
   </div>
 </div>
 
-<div class="modal" id="legalModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lgTitle">
+<div class="modal" id="legalModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lgTitle" inert>
   <div class="modal-card">
     <button class="x-btn" id="lgClose" type="button" data-ia="aria_close" aria-label="Close">&times;</button>
     <div class="legal-body">
